@@ -239,7 +239,7 @@
     "format": "{format_source}",
     "format-source": "",
     "format-source-muted": "",
-    "on-click": "pamixer --default-source -t",
+    "on-click": "pamixer --default-source -t && swayosd-client --input-volume mute-toggle",
     "on-click-right": "omarchy-launch-or-focus-tui wiremix",
     "tooltip-format": "Microphone: {volume}%"
   },

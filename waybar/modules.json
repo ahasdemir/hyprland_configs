@@ -241,6 +241,9 @@
     "format-source-muted": "",
     "on-click": "pamixer --default-source -t && swayosd-client --input-volume mute-toggle",
     "on-click-right": "omarchy-launch-or-focus-tui wiremix",
+    "on-scroll-up": "swayosd-client --input-volume raise",
+    "on-scroll-down": "swayosd-client --input-volume lower",
+    "scroll-step": 5,
     "tooltip-format": "Microphone: {volume}%"
   },
   "custom/tailscale": {

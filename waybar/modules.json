@@ -1,5 +1,7 @@
 {
   "hyprland/workspaces": {
+    "all-outputs": true,
+    "active-only": false,
     "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
@@ -15,11 +17,7 @@
       "10": "10"
     },
     "persistent-workspaces": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": [],
-      "5": []
+      "*": [1, 2, 3, 4, 5]
     }
   },
   "custom/omarchy": {

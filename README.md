@@ -5,7 +5,7 @@ Personal dotfiles and custom configurations for Hyprland, Waybar, SwayOSD, Zsh, 
 ## Repository Structure
 
 ```
-~/projects/hyprland_configs/
+~/hyprland_configs/
 ├── hypr/                 # Hyprland WM configuration (monitors, keybindings, input, look & feel)
 ├── waybar/               # Custom modular Waybar layout, scripts & styles
 ├── swayosd/              # SwayOSD volume, brightness & mic mute popups configuration
@@ -38,7 +38,7 @@ mkdir -p ~/.config
 
 for dir in hypr waybar swayosd zsh walker mako kitty ghostty alacritty; do
     rm -rf "$HOME/.config/$dir"
-    ln -s "$HOME/projects/hyprland_configs/$dir" "$HOME/.config/$dir"
+    ln -s "$HOME/hyprland_configs/$dir" "$HOME/.config/$dir"
 done
 
 # Reload environment

@@ -246,7 +246,7 @@
     "on-scroll-up": "swayosd-client --input-volume raise",
     "on-scroll-down": "swayosd-client --input-volume lower",
     "scroll-step": 5,
-    "tooltip-format": "Microphone: {volume}%"
+    "tooltip-format": "Microphone: {source_volume}%"
   },
   "custom/tailscale": {
     "exec": "~/.config/waybar/scripts/tailscale_status.sh",

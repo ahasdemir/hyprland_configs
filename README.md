@@ -5,7 +5,7 @@ Personal dotfiles and custom configurations for Hyprland, Waybar, Zsh, Walker, M
 ## Repository Structure
 
 ```
-~/projects/hyprland_configs/
+~/hyprland_configs/
 ├── hypr/                 # Hyprland WM configuration (monitors, keybindings, input, look & feel)
 ├── waybar/               # Custom modular Waybar layout, scripts & styles
 ├── zsh/                  # Zsh shell configuration & Powerlevel10k theme

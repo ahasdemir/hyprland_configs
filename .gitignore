@@ -1,0 +1,12 @@
+# Transient & history files
+*.histfile
+.histfile
+.zcompdump*
+*.zwc
+*.bak*
+*.bak
+
+# OS / Editor temporary files
+.DS_Store
+*.swp
+*.tmp

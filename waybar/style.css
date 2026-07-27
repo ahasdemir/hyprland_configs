@@ -1,0 +1,392 @@
+@import "../omarchy/current/theme/waybar.css";
+@import "omarchy-accent.css";
+@define-color panel-shadow alpha(@background, 0.8);
+@define-color subtle-text alpha(@foreground, 0.45);
+@define-color state-active alpha(@accent, 0.95);
+@define-color state-warning alpha(@accent, 0.85);
+@define-color state-critical alpha(@foreground, 1.0);
+
+/* --- Global-Settings ---*/
+
+* {
+  font-family: 'JetBrainsMono Nerd Font';
+  font-size: 12px;
+  font-weight: bold;
+  min-height: 0px;
+  background-color: transparent; /* Reset universal background to avoid double-bg */
+  color: @foreground;
+}
+
+  /* --- Waybar ---*/
+  window#waybar {
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: .5s;
+}
+
+window#waybar.empty #window {
+  background: transparent;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: transparent;
+  padding: 0;
+  margin: 0;
+}
+#waybar.empty .modules-center {
+  opacity: 0;
+}
+
+/* --- Tooltip ---*/
+tooltip {
+  opacity: 1;
+
+ }
+
+ /* --- Sub-Groups ---*/
+
+#left1{
+  border-radius: 26px;
+  border: 1px solid alpha(@accent, 1.0);
+  margin: 1px 8px 1px 0px;
+  background-color: @background;
+  box-shadow: 0px 1px 3px @panel-shadow;
+}
+
+#left2{
+  border-radius: 26px;
+  border: 1px solid alpha(@accent, 1.0);
+  margin: 1px 8px 1px 8px;
+  background-color: @background;
+  box-shadow: 0px 1px 3px @panel-shadow;
+}
+
+#left3{
+
+}
+
+ /* --- Modules ---*/
+
+.modules-center {
+  border-radius: 26px;
+  border: 1px solid alpha(@accent, 1.0);
+  margin: 1px 8px 1px 8px;
+  background-color: @background;
+  box-shadow: 0px 1px 3px @panel-shadow;
+ }
+
+.modules-right {
+  border-radius: 26px;
+  border: 1px solid alpha(@accent, 1.0);
+  margin: 1px 0px 1px 8px;
+  background-color: @background;
+  box-shadow: 0px 1px 3px @panel-shadow;
+}
+
+
+/* --- Workspaces --- */
+#workspaces {
+  border-radius: 24px;
+  background-color: alpha(@background, 1);
+  opacity: 0.95;
+  margin: 0px;
+  padding: 1px 1px 1px;
+}
+
+#workspaces button {
+  padding: 0px 10px;
+  margin: 2px 2px;
+  border-radius: 24px;
+  background-color: alpha(@foreground, 0.5);
+  color: @background; 
+  transition: all 0.2s ease-in-out;
+  opacity: 0.95;
+}
+
+#workspaces button.active {
+  color: @background;
+  min-width: 40px;
+  background-color: alpha(@foreground, 0.9);
+  opacity: 1.0;
+  transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.empty {
+  background-color: alpha(@foreground, 0.4);
+  color: @foreground;
+  opacity: 0.45;
+  border-radius: 24px;
+  transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.empty.active {
+  background-color: alpha(@foreground, 0.9);
+  color: @background;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.empty:hover,
+#workspaces button:hover {
+  background: @foreground;
+  color: @background;
+   opacity: 0.65;
+}
+
+/* --- General Modules --- */
+
+.modules-right > widget > * {
+  margin: 0px;
+  padding: 0px 8px;
+  min-width: 0px;
+}
+
+#tray,
+#window,
+#group-tray-expander,
+#mpris,
+#cpu,
+#clock,
+#battery,
+#network,
+#memory,
+#backlight,
+#bluetooth,
+#pulseaudio,
+#pulseaudio.microphone,
+#language,
+#custom-tailscale,
+#custom-omarchy,
+#custom-weather,
+#custom-update,
+#custom-idle-indicator,
+#custom-notification-silencing-indicator,
+#idle_inhibitor,
+#custom-screenrecording-indicator,
+#custom-updatespacman {
+  margin: 0px;
+  padding: 0px 8px;
+  min-width: 0px;
+}
+
+/* Specific Module */
+
+#pulseaudio {
+  padding-right: 10px;
+}
+
+#pulseaudio.microphone {
+  padding-left: 10px;
+}
+
+#custom-tailscale {
+  padding-right: 10px;
+}
+
+#network {
+  padding-left: 10px;
+  padding-right: 9px;
+}
+
+#memory {
+  padding-left: 9px;
+  padding-right: 5px;
+}
+
+#cpu {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#custom-weather {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#clock {
+  padding-left: 5px;
+}
+
+#group-tray-expander {
+  border-radius: 24px;
+  background-color: transparent;
+  color: @foreground;
+}
+
+#tray {
+    background-color: transparent;
+    border-radius: 24px;
+    margin: 0 10px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @transparent;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+tooltip {
+ padding: 4px;
+ background: @background;
+ border: 1px solid alpha(@foreground, 0.8);
+ border-radius: 8px;
+ box-shadow: 1px 1px 3px 1px @panel-shadow;
+ font-size: 12px;
+ 
+}
+tooltip label {
+    color: @foreground;
+    font-weight: normal;
+}
+
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 2.5px;
+}
+
+#custom-voxtype.recording {
+  color: @state-active;
+}
+
+#custom-idle-indicator,
+#custom-notification-silencing-indicator {
+  min-width: 12px;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 12px;
+  padding-bottom: 0px;
+}
+
+#custom-idle-indicator.active,
+#custom-notification-silencing-indicator.active {
+  color: @state-active;
+}
+
+/* Specific animation Module */
+#mpris {
+  border-radius: 26px;
+  border: 1px solid alpha(@accent, 1.0);
+  margin: 1px 8px 1px 8px;
+  background-color: @background;
+  box-shadow: 0px 1px 3px @panel-shadow;
+  transition-property: background-color;
+  transition-duration: .5s;
+  animation: repeat;
+	animation-name: blink;
+	animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#custom-screenrecording-indicator {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: transparent;
+}
+
+#custom-screenrecording-indicator.active {
+  color: @state-active;
+  animation-name: blink-recording;
+  animation-duration: 0.5s;
+}
+
+@keyframes blink-recording {
+    to {
+        color: @background;
+    }
+}
+
+
+
+@keyframes blink {
+    to {
+        color: @subtle-text;
+        
+    }
+}
+
+@keyframes blink-inhibitor {
+    to {
+        color: @background;
+    }
+}
+
+#idle_inhibitor {
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  color: @foreground;
+ }
+
+#idle_inhibitor.activated {
+  color: @state-active;
+  animation-name: blink-inhibitor;
+  animation-duration: 1s;
+}
+
+#battery.warning {
+  color: @state-warning;
+	 background-color: transparent;
+}
+
+@keyframes blink2 {
+  to {
+    background-color: transparent;
+    color: @state-critical;
+  }
+}
+
+#battery.critical:not(.charging) {
+  background-color: transparent;
+  color: @state-critical;
+  animation-name: blink2;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(12);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/* --- Menu --- */
+
+menu {
+  background: @background;
+  border: 1px solid @accent;
+  border-radius: 10px;
+  padding: 5px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+menuitem {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+menuitem:hover {
+  background: @accent;
+  color: @background;
+}
+
+menu label {
+  color: @foreground;
+}
+
+menuitem label {
+  color: @foreground;
+}
+
+menuitem:hover label {
+  color: @background;
+}
+
+#waybar menu {
+  background: @background;
+}

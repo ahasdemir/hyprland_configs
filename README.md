@@ -1,8 +1,8 @@
-# 🌌 Hyprland & Omarchy Desktop Configurations
+# Hyprland & Omarchy Desktop Configurations
 
 Personal dotfiles and custom configurations for Hyprland, Waybar, SwayOSD, Zsh, Walker, Mako, and terminal emulators on Omarchy / CachyOS Linux.
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 ~/projects/hyprland_configs/
@@ -17,19 +17,19 @@ Personal dotfiles and custom configurations for Hyprland, Waybar, SwayOSD, Zsh, 
 └── alacritty/            # Alacritty terminal configuration
 ```
 
-## 🛠️ Key Highlights
+## Key Highlights
 
 * **Modular Waybar**: Separated `modules.json` and `config.jsonc` layout.
 * **Interactive Modules**:
-  * 🔒 **Tailscale VPN**: Interactive toggle icon with real-time status notifications.
-  * 🎙️ **Microphone & Speaker**: Symmetrical audio modules with left-click mute toggling & SwayOSD feedback.
-  * ⌨️ **Dual Keyboard Layouts**: `Turkish` (TR) and `English` (US) toggled via **`Alt` + `Space`**.
-  * 🌐 **Network Status**: Live Ethernet interface notifications & IP display.
-  * 🌤️ **Nerd Font Weather**: Custom live weather script with temperature display.
+  * **Tailscale VPN**: Interactive toggle icon with real-time status notifications.
+  * **Microphone & Speaker**: Symmetrical audio modules with left-click mute toggling & SwayOSD feedback.
+  * **Dual Keyboard Layouts**: Turkish (TR) and English (US) toggled via Alt + Space.
+  * **Network Status**: Live Ethernet interface notifications & IP display.
+  * **Nerd Font Weather**: Custom live weather script with temperature display.
 * **Pixel-Perfect Spacing**: Balanced vertical margins and symmetrical horizontal icon gaps.
 * **SwayOSD Styling**: Customized On-Screen Display popups for volume, brightness, and mic mute.
 
-## 🚀 Symlink Setup Script
+## Symlink Setup Script
 
 To link all configuration directories from this repository into `~/.config/`:
 

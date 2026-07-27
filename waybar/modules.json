@@ -228,8 +228,10 @@
     "format": "{icon}",
     "on-click": "swayosd-client --output-volume mute-toggle",
     "on-click-right": "omarchy-launch-or-focus-tui wiremix",
-    "tooltip-format": "Volume: {volume}%",
+    "on-scroll-up": "swayosd-client --output-volume raise",
+    "on-scroll-down": "swayosd-client --output-volume lower",
     "scroll-step": 5,
+    "tooltip-format": "Volume: {volume}%",
     "format-muted": "",
     "format-icons": {
       "default": ["", "", ""]

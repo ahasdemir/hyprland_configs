@@ -1,17 +1,18 @@
 @import "../omarchy/current/theme/swayosd.css";
 
-window {
-  border-radius: 20px;
+window#osd,
+window,
+#osd,
+.osd {
+  border-radius: 24px;
   opacity: 0.97;
   border: 2px solid @border-color;
-
   background-color: @background-color;
 }
 
 label {
   font-family: 'JetBrainsMono Nerd Font';
   font-size: 11pt;
-
   color: @label;
 }
 
@@ -19,8 +20,12 @@ image {
   color: @image;
 }
 
-progressbar {
-  border-radius: 10px;
+progressbar,
+trough,
+progress,
+progressbar trough,
+progressbar progress {
+  border-radius: 12px;
 }
 
 progress {

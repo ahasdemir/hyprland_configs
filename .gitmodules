@@ -1,0 +1,3 @@
+[submodule "hypr/scripts/hypr-ai-grammar"]
+	path = hypr/scripts/hypr-ai-grammar
+	url = https://github.com/ahasdemir/hypr-ai-grammar.git

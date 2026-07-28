@@ -23,7 +23,7 @@ Personal dotfiles and custom configurations for Hyprland, Waybar, SwayOSD, Zsh, 
 * **Interactive Modules**:
   * **Tailscale VPN**: Interactive toggle icon with real-time status notifications.
   * **Microphone & Speaker**: Symmetrical audio modules with left-click mute toggling & SwayOSD feedback.
-  * **Dual Keyboard Layouts**: Turkish (TR) and English (US) toggled via Alt + Space.
+  * **Dual Keyboard Layouts**: Turkish (TR) and English (US) toggled via Left Alt + Right Alt.
   * **Network Status**: Live Ethernet interface notifications & IP display.
   * **Nerd Font Weather**: Custom live weather script with temperature display.
 * **Pixel-Perfect Spacing**: Balanced vertical margins and symmetrical horizontal icon gaps.

@@ -1,1 +1,1 @@
-/home/ahmet/Projects/ai-grammar/ai-grammar.sh
+hypr-ai-grammar/ai-grammar.sh

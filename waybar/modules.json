@@ -96,7 +96,8 @@
   },
   "hyprland/language": {
     "format": "{short}",
-    "tooltip-format": "Keyboard Layout: {long}"
+    "tooltip-format": "Keyboard Layout: {long}",
+    "on-click": "hyprctl switchxkblayout current next"
   },
   "cpu": {
     "interval": 2,
@@ -224,8 +225,8 @@
   },
   "pulseaudio": {
     "format": "{icon}",
-    "on-click": "swayosd-client --output-volume mute-toggle",
-    "on-click-right": "omarchy-launch-or-focus-tui wiremix",
+    "on-click": "omarchy-launch-or-focus-tui wiremix",
+    "on-click-right": "swayosd-client --output-volume mute-toggle",
     "on-scroll-up": "swayosd-client --output-volume raise",
     "on-scroll-down": "swayosd-client --output-volume lower",
     "scroll-step": 5,
@@ -239,8 +240,8 @@
     "format": "{format_source}",
     "format-source": "",
     "format-source-muted": "",
-    "on-click": "pamixer --default-source -t && swayosd-client --input-volume mute-toggle",
-    "on-click-right": "omarchy-launch-or-focus-tui wiremix",
+    "on-click": "omarchy-launch-or-focus-tui wiremix",
+    "on-click-right": "pamixer --default-source -t && swayosd-client --input-volume mute-toggle",
     "on-scroll-up": "swayosd-client --input-volume raise",
     "on-scroll-down": "swayosd-client --input-volume lower",
     "scroll-step": 5,

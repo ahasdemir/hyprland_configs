@@ -1,5 +1,7 @@
 {
   "reload_style_on_change": false,
+  "on-sigusr1": "hide",
+  "on-sigusr2": "show",
   "layer": "top",
   "position": "top",
   "mod": "dock",
